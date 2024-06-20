@@ -12,11 +12,6 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0;
 }
 
-.my-container {
-  width: 80%;
-  max-width: 1200px;
-}
-
 @keyframes animate1 {
   0% {
     top: 5%;
@@ -38,20 +33,21 @@ h1, h2, h3, h4, h5, h6, p {
     transform: rotate(90deg);
   }
   25% {
-    top: 30%;
+    top: 25%;
     right: 20%;
   }
   50% {
-    top: 50%;
-    right: 40%;
-    transform: rotate(180deg);
+    top: 40%;
+    right: 30%;
+    transform: rotate(270deg);
   }
   75% {
-    top: 30%;
+    top: 25%;
     right: 20%;
   }
   100% {
     top: 20%;
+    right: 10%;
     transform: rotate(90deg);
   }
 }
@@ -64,6 +60,17 @@ h1, h2, h3, h4, h5, h6, p {
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(100%);
+  }
+  50% {
+    transform: scale(102%);
+  }
+  100% {
+    transform: scale(100%);
   }
 }
 body {
@@ -84,14 +91,14 @@ body .circle1 {
   z-index: -1;
   left: 0%;
   top: 0%;
-  animation: animate1 5s ease-in infinite;
+  animation: animate1 10s ease-in infinite;
 }
 body .circle2 {
   width: 400px;
   height: 400px;
   position: absolute;
   z-index: -1;
-  right: 0%;
+  right: 10%;
   top: 30%;
   animation: animate3 12s ease-in infinite;
 }
@@ -123,6 +130,12 @@ body main section.main-area h1 {
 body main section.main-area .info {
   padding: 2rem;
 }
+body main section.main-area .info .notice {
+  text-align: center;
+  padding: 0 0.5rem;
+  font-weight: bold;
+  animation: scale 1.5s ease-in infinite;
+}
 body main section.main-area .info .social-media {
   display: flex;
   gap: 2px;
@@ -150,7 +163,7 @@ body main .img-area img {
      object-fit: cover;
   animation: animate2 3s ease-in infinite;
 }
-body section.about-me {
+body main section.about-me {
   padding: 5rem;
   display: flex;
   justify-content: space-around;
@@ -158,18 +171,20 @@ body section.about-me {
   flex-wrap: wrap;
   position: relative;
 }
-body section.about-me h3 {
+body main section.about-me h3 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
 }
-body section.about-me h4 {
+body main section.about-me h4 {
   font-size: 1.2rem;
 }
-body section.about-me h6 {
+body main section.about-me h6 {
   font-size: 1rem;
 }
-body section.about-me .description {
-  background-color: rgba(0, 0, 0, 0.05);
+body main section.about-me .description {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-weight: 800;
   border-radius: 10px;
   padding: 1rem;
   width: 60%;
@@ -180,63 +195,63 @@ body section.about-me .description {
   flex: 1 1 400px;
   z-index: 2;
 }
-body section.about-me .description section.skills {
+body main section.about-me .description section.skills {
   width: 80%;
 }
-body section.about-me .my-education {
+body main section.about-me .my-education {
   width: 100%;
 }
-body section.about-me .my-education .period {
+body main section.about-me .my-education .period {
   display: flex;
   justify-content: center;
   gap: 3rem;
 }
-body section.about-me .my-education .period .school {
-  background-color: rgba(187, 187, 187, 0.215);
+body main section.about-me .my-education .period .school {
+  background-color: rgba(187, 187, 187, 0.4);
   border-radius: 10px;
   padding: 0.5rem 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-body section.about-me .my-photo {
+body main section.about-me .my-photo {
   width: 40%;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   flex: 1 1 500px;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-body section.about-me .my-photo img {
-  height: 80vh;
+body main section.about-me .my-photo img {
+  height: 90vh;
   -o-object-fit: cover;
      object-fit: cover;
   box-shadow: 30px 25px;
 }
-body section.paragraph {
+body main section.paragraph {
   padding: 5rem 10rem;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
 }
-body section.paragraph h3 {
+body main section.paragraph h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
-body section.paragraph h4 {
+body main section.paragraph h4 {
   line-height: 1.8rem;
   font-size: 1rem;
 }
-body section.experience {
+body main section.experience {
   background-image: url("../images/concrete-wall-3.png");
-  padding: 2rem 5rem;
+  padding: 5rem 10rem;
 }
-body section.experience h3 {
+body main section.experience h3 {
   font-size: 1.5rem;
 }
-body section.experience h2 {
+body main section.experience h2 {
   font-size: 1.2rem;
 }
 body footer {
