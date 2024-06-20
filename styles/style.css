@@ -73,6 +73,23 @@ h1, h2, h3, h4, h5, h6, p {
     transform: scale(100%);
   }
 }
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 body {
   position: relative;
 }
@@ -159,6 +176,7 @@ body main section.main-area .info .social-media img {
 }
 body main section.main-area .info .social-media img:hover {
   scale: 110%;
+  animation: rotate 1s ease-in infinite;
 }
 body main section.main-area .img-area {
   flex-basis: 450px;

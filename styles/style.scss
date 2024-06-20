@@ -90,6 +90,28 @@ h1,h2,h3,h4,h5,h6,p{
   }
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(5deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 body{
   position: relative;
 
@@ -185,6 +207,7 @@ body{
               height: 5vh;
               &:hover{
                 scale: 110%;
+                animation: rotate 1s ease-in infinite;
               }
             }
           }
