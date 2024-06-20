@@ -160,6 +160,7 @@ body{
       align-items: center;
       padding: 10px;
       h1{
+        text-align: center;
         font-size: 3rem;
         font-weight: 600;
       }
@@ -187,17 +188,17 @@ body{
             }
           }
         }
-      }
-      .img-area{
-        flex-basis: 450px;
-        display: flex;
-        justify-content: center;
-        width: 50vh;
-        height: 50vh;
-        img{
-          height: 100%;
-          object-fit: cover;
-          animation: animate2 3s ease-in infinite;
+        .img-area{
+          flex-basis: 450px;
+          display: flex;
+          justify-content: center;
+          width: 50vh;
+          height: 50vh;
+          img{
+            height: 100%;
+            object-fit: cover;
+            animation: animate2 3s ease-in infinite;
+          }
         }
       }
       section.about-me{
