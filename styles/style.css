@@ -111,6 +111,14 @@ body nav .dropdown-menu li a {
 body nav .dropdown-menu li a:hover {
   font-weight: 500;
 }
+body nav .offcanvas-header a {
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: black;
+}
+body nav .offcanvas-header a:hover {
+  scale: 105%;
+}
 body main {
   z-index: 2;
 }

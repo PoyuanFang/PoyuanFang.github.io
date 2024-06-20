@@ -138,6 +138,16 @@ body{
         }
       }
     }
+    .offcanvas-header{
+      a{
+        transition: all 0.2s ease;
+        text-decoration: none;
+        color: black;
+        &:hover{
+          scale: 105%;
+        }
+      }
+    }
   }
   main{
     z-index: 2;
