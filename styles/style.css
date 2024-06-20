@@ -138,6 +138,7 @@ body main section.main-area h1 {
 }
 body main section.main-area .info {
   padding: 2rem;
+  text-align: center;
 }
 body main section.main-area .info .notice {
   text-align: center;
