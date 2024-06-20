@@ -134,7 +134,7 @@ body main section.main-area .info .notice {
   text-align: center;
   padding: 0 0.5rem;
   font-weight: bold;
-  animation: scale 1.5s ease-in infinite;
+  animation: scale 1.2s ease-in infinite;
 }
 body main section.main-area .info .social-media {
   display: flex;
@@ -207,7 +207,7 @@ body main section.about-me .my-education .period {
   gap: 3rem;
 }
 body main section.about-me .my-education .period .school {
-  background-color: rgba(187, 187, 187, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   padding: 0.5rem 3rem;
   display: flex;
@@ -257,14 +257,32 @@ body main section.experience h2 {
 body footer {
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 body footer .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   color: white;
-  padding: 1rem;
+}
+body footer .contact .contact-information {
+  display: flex;
+  gap: 1rem;
+}
+body footer .footer-logo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+body footer .footer-logo h6 {
+  color: white;
 }
 body footer .footer-logo img {
   transition: all 0.2s ease;
