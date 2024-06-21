@@ -286,6 +286,7 @@ body main section.experience h3 {
 }
 body main section.experience h2 {
   font-size: 1.2rem;
+  font-weight: 900;
 }
 @media screen and (max-width: 768px) {
   body main section.main-area {
@@ -313,7 +314,12 @@ body main section.experience h2 {
   }
   body main section.paragraph {
     padding: 2rem 2rem;
-    background-image: url("../images/concrete-wall-3.png");
+    color: white;
+  }
+  body main section.paragraph .p-bg {
+    padding: 2rem 2rem;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
   }
   body main section.experience {
     padding: 2rem 2rem;

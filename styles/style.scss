@@ -327,6 +327,7 @@ body{
       }
       h2{
         font-size: 1.2rem;
+        font-weight: 900;
       }
     }
 
@@ -359,7 +360,12 @@ body{
       }
       section.paragraph{
         padding: 2rem 2rem;
-        background-image: url('../images/concrete-wall-3.png');
+        color: white;
+        .p-bg{
+          padding: 2rem 2rem;
+          border-radius: 10px;
+          background-color: rgba( 0, 0, 0, 0.5);
+        }
       }
       section.experience{
         padding: 2rem 2rem;
