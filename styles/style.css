@@ -137,6 +137,16 @@ body .scroll-top {
 body .scroll-top:hover {
   background-color: rgb(45, 150, 233);
 }
+@media screen and (max-width: 768px) {
+  body .circle1 {
+    width: 100px;
+    height: 100px;
+  }
+  body .circle2 {
+    width: 250px;
+    height: 250px;
+  }
+}
 body nav .navbar {
   position: fixed;
 }
@@ -292,6 +302,9 @@ body main section.experience h2 {
   body main section.main-area {
     padding: 5px;
   }
+  body main section.main-area h1 {
+    font-size: 1.5rem;
+  }
   body main section.main-area .info .social-media {
     justify-content: center;
   }
@@ -365,4 +378,9 @@ body footer .footer-logo img {
 }
 body footer .footer-logo img:hover {
   scale: 110%;
+}
+@media screen and (max-width: 768px) {
+  body footer section.contact h6 {
+    font-size: 0.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
