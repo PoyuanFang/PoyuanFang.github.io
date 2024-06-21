@@ -291,6 +291,9 @@ body main section.experience h2 {
   body main section.main-area {
     padding: 5px;
   }
+  body main section.main-area .info .social-media {
+    justify-content: center;
+  }
   body main section.main-area .info .social-media img {
     height: 5vh;
     width: 10vw;
@@ -310,6 +313,7 @@ body main section.experience h2 {
   }
   body main section.paragraph {
     padding: 2rem 2rem;
+    background-image: url("../images/concrete-wall-3.png");
   }
   body main section.experience {
     padding: 2rem 2rem;

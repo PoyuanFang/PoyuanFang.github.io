@@ -336,6 +336,7 @@ body{
         padding: 5px;
         .info{
           .social-media{
+            justify-content: center;
             img{
               height: 5vh;
               width: 10vw;
@@ -358,6 +359,7 @@ body{
       }
       section.paragraph{
         padding: 2rem 2rem;
+        background-image: url('../images/concrete-wall-3.png');
       }
       section.experience{
         padding: 2rem 2rem;
