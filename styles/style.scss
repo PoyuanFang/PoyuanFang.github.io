@@ -192,7 +192,7 @@ body{
   }
   main{
     z-index: 2;
-    section.main-area{
+    section.main-area {
       min-height: 70vh;
       display: flex;
       flex-direction: column;
@@ -200,50 +200,45 @@ body{
       justify-content: center;
       align-items: center;
       padding: 10px;
-      h1{
+  
+      h1 {
         text-align: center;
         font-size: 3rem;
         font-weight: 600;
       }
-      .info{
+  
+      .info {
         padding: 2rem;
         text-align: center;
         // flex-basis: 450px;
-        .notice{
+  
+        .notice {
           text-align: center;
           padding: 0 0.5rem;
           font-weight: bold;
           animation: scale 1.2s ease-in infinite;
         }
-        .social-media{
+  
+        .social-media {
           display: flex;
           gap: 2px;
           justify-content: end;
           align-items: center;
-            img{
-              transition: all 0.2s ease;
-              width: 3vw;
-              height: 5vh;
-              &:hover{
-                scale: 110%;
-                animation: rotate 1s ease-in infinite;
-              }
+  
+          img {
+            transition: all 0.2s ease;
+            width: 3vw;
+            height: 5vh;
+  
+            &:hover {
+              scale: 110%;
+              animation: rotate 1s ease-in infinite;
             }
           }
         }
-        .img-area{
-          flex-basis: 450px;
-          display: flex;
-          justify-content: center;
-          width: 50vh;
-          height: 50vh;
-          img{
-            height: 100%;
-            object-fit: cover;
-            animation: animate2 3s ease-in infinite;
-          }
-        }
+      }
     }
+  
     section.about-me{
       padding: 5rem;
       display: flex;
@@ -277,20 +272,20 @@ body{
         section.skills{
           width: 80%;
         }
-      }
-      .my-education{
-        width: 100%;
-        .period{
-          display: flex;
-          justify-content: center;
-          gap: 3rem;
-          .school{
-            background-color: rgba( 0, 0, 0, 0.3);
-            border-radius: 10px;
-            padding: 0.5rem 3rem;
+        .my-education{
+          width: 100%;
+          .period{
             display: flex;
-            flex-direction: column;
             justify-content: center;
+            gap: 3rem;
+            .school{
+              background-color: rgba( 0, 0, 0, 0.3);
+              border-radius: 10px;
+              padding: 0.5rem 3rem;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            }
           }
         }
       }
@@ -303,7 +298,7 @@ body{
         align-items: center;
         position: relative;
         img{
-          height: 90vh;
+          height: 100%;
           object-fit: cover;
           box-shadow: 30px 25px;
         }
@@ -334,7 +329,45 @@ body{
         font-size: 1.2rem;
       }
     }
+
+    //main RWD
+    @media screen and (max-width: 768px) {
+      section.main-area {
+        padding: 5px;
+        .info{
+          .social-media{
+            img{
+              height: 5vh;
+              width: 10vw;
+            }
+          }
+        }
+      }
+      section.about-me {
+        padding: 2rem;
+          .period{
+            flex-direction: column;
+            gap: 1rem;
+          }
+          .my-photo {
+            height: 60vh;
+            img{
+              height: 50vh;
+            }
+          }
+      }
+      section.paragraph{
+        padding: 2rem 2rem;
+      }
+      section.experience{
+        padding: 2rem 2rem;
+        ul{
+          padding: 0 1rem;
+        }
+      }
     }
+    }
+
   footer{
       background-color: rgba(0, 0, 0, 0.5);
       display: flex;
@@ -373,22 +406,7 @@ body{
         }
       }
     }
+  
+    //RWD
+    
   }
-
-  //RWD
-  @media screen and (max-width: 768px) {
-      section.main-area {
-        padding: 5px;
-      }
-      section.about-me {
-        padding: 2rem;
-        .description {
-          .my-education {
-            .period {
-              flex-direction: column;
-              gap: 1rem;
-            }
-          }
-        }
-      }
-    }
