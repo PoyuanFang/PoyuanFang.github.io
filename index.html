@@ -9,6 +9,7 @@
   ">
   <link rel="icon" href="images/poyuan.ico">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <title>Poyuan Fang's portfolio</title>
 </head>
 
@@ -16,6 +17,7 @@
   <img class="fixed-image" src="./images/geadient_blue.png" alt="">
   <img src="./images/circle_工作區域 1.png" alt="" class="circle1">
   <img src="./images/circle_工作區域 1.png" alt="" class="circle2">
+  <div class="scroll-top"><i class="fa-solid fa-chevron-up"></i></div>
   <nav class="navbar sticky-top bg-white">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">Poyuan Fang</a>
@@ -107,9 +109,6 @@
           <a target="_blank" href="https://www.instagram.com/poyuan__/"><img src="./images/instagram.svg" alt=""></a>
         </div>
       </div>
-      <!-- <div class="img-area">
-        <img src="./images/poyuan.png" alt="個人照片">
-      </div> -->
     </section>
     <section class="about-me" id="about">
       <section class="description" data-aos="fade-up">
@@ -266,6 +265,31 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+
+  <script>
+    let oDiv = document.querySelector(".scroll-top")
+    window.onscroll = function () {
+      oDiv.style.display = 'block';
+      let height = document.documentElement.scrollTop || document.body.scrollTop;
+      console.log(height);
+      let clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+      console.log(clientHeight);
+      if (height <= 200) {
+        oDiv.style.display = 'none';
+      }
+    }
+
+    oDiv.onclick = function () {
+      let height = document.documentElement.scrollTop
+      let t = setInterval(() => {
+        height -= 100;
+        if (height > 0) {
+          window.scrollTo(0, 0);
+          clearInterval(t);
+        }
+      }, 10);
+    }
   </script>
 </body>
 
