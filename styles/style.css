@@ -120,6 +120,7 @@ body .circle2 {
   animation: animate3 12s ease-in infinite;
 }
 body .scroll-top {
+  display: none;
   background-color: rgb(129, 192, 242);
   position: fixed;
   right: 20px;
